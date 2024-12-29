@@ -25,7 +25,7 @@ const productFix = [
     }
 ];
 
-const sounds = [
+const soundsFix = [
     {
         id: 100,
         img: "https://waproduction.imgix.net/uploads/images/file/products/10169/list-retina_c8395d685435798136458f5808568117.jpg?w=300",
@@ -137,6 +137,13 @@ if (!products) {
     localStorage.setItem("products", JSON.stringify(productFix));
     products = productFix;
 }
+
+const sounds = JSON.parse(localStorage.getItem("sounds"));
+if (!sounds) {
+    localStorage.setItem("sounds", JSON.stringify(soundsFix));
+    sounds = soundsFix;
+}
+
 const productBox = document.getElementById("product-box");
 let html = "";
 for (const product of products) {
