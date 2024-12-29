@@ -1,0 +1,90 @@
+    .signup-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    gap: 10px;
+}
+
+.form-floating {
+    width: 100%;
+}
+
+.form-control {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #ffffff !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    outline: none !important;
+    color: #ffffff !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.forgot-password {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: right;
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+}
+
+.or-text {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    margin: 0;
+}
+
+.form-checkbox {
+    display: flex;
+    width: 100%;
+}
+
+.form-check-label {
+    color: #ffffff;
+}
+
+.terms-and-conditions {
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.back-to-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.back-to-login img {
+    width: 20px;
+    height: 20px;
+}   
+
+.back-to-login p {
+    color: #ffffff;
+    font-size: 11px;
+    margin: 0;
+}

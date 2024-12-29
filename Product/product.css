@@ -1,0 +1,88 @@
+.container {
+    background: linear-gradient(to right, #ee192a 0, #f23082 100%);
+    padding: 20px;
+    border-radius: 10px;
+    padding: 20px 120px;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-details {
+    flex: 2 1 600px;
+}
+
+.product-details h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    margin-bottom: 20px;
+}
+
+.sale-banner {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price del {
+    color: #aaa;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background: #4caf50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn.wishlist {
+    background: #555;
+}
+
+.best-value {
+    margin-top: 30px;
+    background: #2e7d32;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.best-value .highlight {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
