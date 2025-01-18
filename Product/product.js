@@ -1,6 +1,8 @@
 const id = new URLSearchParams(window.location.search).get("id");
 const products = JSON.parse(localStorage.getItem("products"));
-const product = products.find(product => product.id == id); 
+const sounds = JSON.parse(localStorage.getItem("sounds"));
+const data = [...products, ...sounds];
+const product = data.find(item => item.id == id); 
 
 const productImage = document.getElementById("product-image");
 const productName = document.getElementById("product-name");

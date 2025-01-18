@@ -12,6 +12,10 @@ finishRegistration.addEventListener('click', () => {
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
     const termsAndConditions = document.getElementById('terms-and-conditions').checked;
+    if (confirmPassword != password) {
+        alert('password va confirm password phai giong nhau');
+        return;
+    }
     if (email && fullName && password && confirmPassword && termsAndConditions) {
         let users = JSON.parse(localStorage.getItem('users')) || [];
         users.push({ id: users.length + 1, email, fullName, password, confirmPassword });

@@ -13,7 +13,7 @@ loginButton.addEventListener('click', () => {
     const user = users.find(user => user.email === email && user.password === password); // tìm xem có email và password đấy không
     if (user) {
         alert('Login successful');
-        window.location.href = '../Home/home.html';
+        window.location.href = '../';
     } else {
         alert('Invalid email or password');
     }
